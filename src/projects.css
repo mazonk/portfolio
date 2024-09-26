@@ -1,0 +1,66 @@
+.projects {
+    padding: 4rem 0;
+    background-color: #D2B37C ; /* Optional background color */
+    text-align: center;
+    width: 100%;
+}
+
+.projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #192233; /* Text color */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between project cards */
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire card */
+}
+
+.project-info {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background on hover */
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-info {
+    opacity: 1; /* Show info on hover */
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-info p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}

@@ -4,3 +4,16 @@
   padding: 2rem;
   text-align: center;
 }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Background color */
+
+ /* background-image: 
+      linear-gradient(45deg, #123A6B 26%, transparent 0%), 
+      linear-gradient(200deg, #B2967D 10%, transparent 0%);
+  background-size: 313px 313px, 362px 362px;
+  background-repeat: repeat; 
+  background-position: 26px 0, 10px 0; /* Offset the second stripe */
+}
+

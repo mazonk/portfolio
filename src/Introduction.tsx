@@ -1,4 +1,5 @@
 import React from 'react';
+import gsap from 'gsap';
 import './Introduction.css'; // Ensure this path is correct
 
 const Introduction: React.FC = () => {
@@ -6,7 +7,7 @@ const Introduction: React.FC = () => {
     <div className="introduction">
       {/* Top Image Section */}
       <div className="image-container">
-        <img src="\src\assets\greenleaf.jpg" alt="A beautiful green leaf" className="top-image" />
+        <img src="\src\assets\sky.jpg" alt="A beautiful green leaf" className="top-image" />
       </div>
 
       {/* Introduction Text */}

@@ -1,0 +1,31 @@
+.footer {
+    background-color: #192233; /* Dark color to contrast with the rest of the page */
+    padding: 1rem 0;
+    color: #fafafa; /* Light text color */
+    text-align: center;
+    width: 80vw;
+
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-contacts {
+    margin-top: 1rem;
+}
+
+.footer-contacts a {
+    color: #fafafa; /* Make links the same color as text */
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contacts a:hover {
+    color: #b08145; /* Accent color on hover */
+}

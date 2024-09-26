@@ -1,5 +1,5 @@
 .image-container {
-  height: 50vh; /* Full height of the image container */
+  height: 90vh; /* Full height of the image container */
   width: 100vw;
   overflow: hidden;
   background-size: cover; /* Ensure the image covers the entire container */
