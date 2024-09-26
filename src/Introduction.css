@@ -1,12 +1,12 @@
 .image-container {
-  height: 90vh; /* Full height of the image container */
+  height: 100vh; /* Full height of the image container */
   width: 100vw;
   overflow: hidden;
   background-size: cover; /* Ensure the image covers the entire container */
   background-position: center; /* Center the image */
   margin-top: 0%;
 }
-.introduction {
+.lilita-one-regular {
   display: flex;
   flex-direction: column;
   align-items: center;

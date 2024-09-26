@@ -3,12 +3,13 @@
     padding: 1rem 0;
     color: #fafafa; /* Light text color */
     text-align: center;
-    width: 80vw;
-
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-content {
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@
 
 .footer-contacts a {
     color: #fafafa; /* Make links the same color as text */
-    margin: 0 1rem;
+    margin: 1rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }

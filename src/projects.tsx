@@ -13,7 +13,7 @@ const projects = [
     id: 2,
     title: 'Deck 1',
     description: 'A dispatch app for helicopters. ',
-    imageUrl: 'src/assets/greenleaf.jpg',
+    imageUrl: 'src/assets/dispatch.png',
     link: 'https://github.com/DECK1xUCN/DispatchApp',
   },
   {
@@ -21,6 +21,13 @@ const projects = [
     title: 'Project 3',
     description: 'A creative design portfolio.',
     imageUrl: 'src/assets/blue.jpg',
+    link: 'https://github.com/yourproject2',
+  },
+  {
+    id: 4,
+    title: 'Project 4',
+    description: 'A prototype of an app.',
+    imageUrl: 'src/assets/project4.jpg',
     link: 'https://github.com/yourproject2',
   },
 ];
