@@ -1,0 +1,17 @@
+.about-me {
+    padding: 2rem; /* Space around the content */
+    text-align: center; /* Center the text */
+    color: #342217; /* Use your desired text color */
+}
+
+.about-me h1 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.about-me p {
+    font-size: 1.25rem; /* Adjust size as needed */
+    line-height: 1.6; /* Improve readability */
+    max-width: 600px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the paragraph */
+}
