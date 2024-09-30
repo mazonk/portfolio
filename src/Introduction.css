@@ -5,6 +5,7 @@
   background-size: cover; /* Ensure the image covers the entire container */
   background-position: center; /* Center the image */
   margin-top: 0%;
+  text-align: center;
 }
 .lilita-one-regular {
   display: flex;
@@ -20,12 +21,7 @@
 }
 
 /* Styles for the text overlay */
-.intro-text {
-  position: absolute; /* Position the text over the image */
-  top: 50%; /* Position the text in the vertical center */
-  left: 50%; /* Position the text in the horizontal center */
-  transform: translate(-50%, -50%); /* Center the text */
-  text-align: center; /* Center text alignment */
+.intro-text .text-container {
   color: #fafafa; /* Set text color */
   /*user-select: none*/
 }
@@ -38,3 +34,5 @@ h1 {
 h2 {
   font-size: 1.5rem; /* Adjust as needed */
 }
+
+

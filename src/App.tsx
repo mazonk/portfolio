@@ -3,15 +3,17 @@ import { gsap } from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import './App.css';
 import Introduction from './Introduction';
+import Timeline from './Timeline';
 import AboutMe from './AboutMe';
-import Footer from './Footer'; // Ensure this file name matches your actual file
-import Projects from './Projects'; // Ensure this file name matches your actual file
+import Footer from './footer'; // Ensure this file name matches your actual file
+import Projects from './projects'; // Ensure this file name matches your actual file
 import Skills from './Skills'; // Ensure this file name matches your actual file
 
 gsap.registerPlugin(ScrollTrigger);
 
 const App: React.FC = () => {
   useEffect(() => {
+    requestAnimationFrame(() => {
     // Scale effect for Introduction section
     gsap.fromTo('.introduction', 
       { scale: 0, opacity: 0 }, 
@@ -23,11 +25,12 @@ const App: React.FC = () => {
         scrollTrigger: {
           trigger: '.introduction',
           start: 'top 90%', // Trigger when 10% of the section is visible (top is at 90% of the viewport)
-          end: 'bottom top',
-          scrub: 0.5, // Smooth scrubbing effect, the lower the number, the smoother the effect
-        },
-      }
-    );
+          end: 'bottom 70%',
+          scrub: 0.3, // Smooth scrubbing effect, the lower the number, the smoother the effect
+        
+    }
+      });
+      }, []);
 
     // Scale effect for About Me section
     gsap.fromTo('.about-me', 
@@ -51,6 +54,7 @@ const App: React.FC = () => {
     <>
       <Introduction />
       <AboutMe />
+      <Timeline />
       <Projects />
       <Skills />
       <Footer />

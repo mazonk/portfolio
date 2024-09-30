@@ -7,7 +7,7 @@ const projects = [
     title: 'Project 1',
     description: 'A cool web development project.',
     imageUrl: 'src/assets/sky.jpg', // Replace with your actual image path
-    link: 'https://github.com/yourproject1', // Link to the project or demo
+    link: 'https://spicypisces.eu/pages', // Link to the project or demo
   },
   {
     id: 2,
@@ -18,10 +18,10 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Project 3',
+    title: 'Housewarming',
     description: 'A creative design portfolio.',
-    imageUrl: 'src/assets/blue.jpg',
-    link: 'https://github.com/yourproject2',
+    imageUrl: 'src/assets/HW.png',
+    link: 'https://github.com/4ndris1114/house-warming',
   },
   {
     id: 4,
