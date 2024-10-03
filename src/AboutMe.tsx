@@ -1,12 +1,13 @@
 import React from 'react';
 import './AboutMe.css';
+import basePath from './imageRoute';
 
 const AboutMe: React.FC = () => {
   return (
     <div className="about-me">
     <div className="content">
       <div className="image-container">
-        <img src="\src\assets\me.JPG" alt="My Picture" className="profile-image" />
+        <img src={`..${basePath}/assets/me.JPG`} alt="My Picture" className="profile-image" />
       </div>
       <div className="text-container">
         <p>

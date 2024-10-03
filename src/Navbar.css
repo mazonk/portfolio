@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #021838;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  .navbar-logo img {
+    width: 3vw; /* Adjust logo size */
+    border-radius: 15%;
+  }
+  
+  .navbar-links a {
+    margin-left: 2rem;
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #b08145; /* Accent color on hover */
+  }
+  

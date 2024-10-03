@@ -8,6 +8,7 @@ import AboutMe from './AboutMe';
 import Footer from './footer'; // Ensure this file name matches your actual file
 import Projects from './projects'; // Ensure this file name matches your actual file
 import Skills from './Skills'; // Ensure this file name matches your actual file
+import Navbar from './Navbar';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,7 +31,7 @@ const App: React.FC = () => {
         
     }
       });
-      }, []);
+      }, );
 
     // Scale effect for About Me section
     gsap.fromTo('.about-me', 
@@ -50,16 +51,29 @@ const App: React.FC = () => {
     );
   }, []);
 
-  return (
-    <>
-      <Introduction />
-      <AboutMe />
-      <Timeline />
-      <Projects />
-      <Skills />
-      <Footer />
-    </>
-  );
-};
+    return (
+      <div>
+        <Navbar />
+        <section id="introduction">
+          <Introduction />
+        </section>
+        <section id="aboutme">
+          <AboutMe />
+        </section>
+        <section id="timeline">
+          <Timeline />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="footer">
+          <Footer />
+        </section>
+      </div>
+    );
+  };
 
 export default App;

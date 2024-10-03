@@ -5,6 +5,7 @@ import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { CSSPlugin } from 'gsap/CSSPlugin';
 import './Skills.css';
+import basePath from './imageRoute';
 
 gsap.registerPlugin(Draggable, ScrollToPlugin, MotionPathPlugin, CSSPlugin);
 
@@ -37,13 +38,14 @@ const Skills: React.FC = () => {
     <div className="skills">
       <h1 className="skills-title">My Skills</h1>
       <div className="logos-container" ref={logosRef}>
-        <img src="src/assets/html.png" alt="HTML" className="logo" />
-        <img src="src/assets/css.png" alt="CSS" className="logo" />
-        <img src="src/assets/javascript.png" alt="JavaScript" className="logo" />
-        <img src="src/assets/csharp.png" alt="C#" className="logo" />
-        <img src="src/assets/ts.png" alt="TypeScript" className="logo" />
-        <img src="src/assets/node.webp" alt="Node.js" className="logo" />
-        <img src="src/assets/tailwind.png" alt="Tailwind" className="logo" />
+        <img src={`..${basePath}/assets/html.png`} alt="HTML" className="logo" />
+        <img src={`..${basePath}/assets/css.png`} alt="CSS" className="logo" />
+        <img src={`..${basePath}/assets/javascript.png`} alt="JavaScript" className="logo" />
+        <img src={`..${basePath}/assets/csharp.png`} alt="C#" className="logo" />
+        <img src={`..${basePath}/assets/ts.png`} alt="TypeScript" className="logo" />
+        <img src={`..${basePath}/assets/node.webp`} alt="Node.js" className="logo" />
+        <img src={`..${basePath}/assets/tailwind.png`} alt="Tailwind" className="logo" />
+        <img src={`..${basePath}/assets/ps.jpg`} alt="Adobe PS" className="logo" />
       </div>
     </div>
   );

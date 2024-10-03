@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 import './Introduction.css'; // Ensure this path is correct
+import basePath from './imageRoute';
+
 
 const Introduction: React.FC = () => {
   useEffect(() => {
@@ -32,11 +34,13 @@ const Introduction: React.FC = () => {
 
   }, []);
 
+  
+
   return (
     <div className="lilita-one-regular">
       {/* Top Image Section */}
       <div className="image-container relative">
-        <img src="\src\assets\sky.jpg" alt="A beautiful green leaf" className="top-image" />
+        <img src={`..${basePath}/assets/sky.jpg`} alt="A beautiful green leaf" className="top-image" />
         {/* Introduction Text */}
         <div className="intro-text absolute inset-0 flex items-center justify-center">
           <div className="text-container">

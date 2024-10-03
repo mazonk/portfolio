@@ -8,16 +8,16 @@ gsap.registerPlugin(ScrollTrigger);
 const Timeline: React.FC = () => {
     useEffect(() => {
         // Loop through each timeline-item
-        gsap.utils.toArray('.timeline-item').forEach((item) => {
+        gsap.utils.toArray('.timeline-item').forEach((item:any) => {
           gsap.from(item, {
             scrollTrigger: {
               trigger: item, // Set the trigger to the individual item
               start: "top bottom", // Animation starts when the top of the item reaches the bottom of the viewport
               end: "top center", // Animation ends when the top of the item reaches the center of the viewport
               toggleActions: "play reverse", // Plays the animation on scroll down, reverses on scroll up
-              markers: true, // Add visual markers for debugging
+              scrub: true,
             },
-            opacity: 0,
+            opacity: 1,
             y: 50,
             duration: 1.5,
             ease: "power2.out",
