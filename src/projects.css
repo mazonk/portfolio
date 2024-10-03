@@ -1,0 +1,84 @@
+.projects {
+    padding: 4rem 0;
+    background-color: #B08145; /* Fallback background color */
+    background-image: 
+      linear-gradient(45deg, #eee4dd80 9px, transparent 9px),
+      linear-gradient(45deg, rgba(24, 105, 151, 0.5) 135px, transparent 135px),
+      linear-gradient(45deg, rgba(225, 244, 253, 0.5) 45px, transparent 45px);
+    background-position: 
+      149px 0, /* Adjust for the first stripe */
+      95px 0, /* Adjust for the second stripe */
+      140px 0; /* Adjust for the third stripe */
+    background-size: 
+      351px 100%, /* Width for the first stripe */
+      225px 100%, /* Width for the second stripe */
+      315px 100%; /* Width for the third stripe */
+    background-repeat: repeat; /* Repeat the patterns */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #192233; /* Text color */
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between project cards */
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire card */
+}
+
+.project-info {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background on hover */
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-info {
+    opacity: 1; /* Show info on hover */
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-info p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}

@@ -1,0 +1,77 @@
+.footer {
+    background-color: #192233; /* Dark background */
+    padding: 1rem; /* Increased padding for breathing space */
+    color: #fafafa; /* Light text color */
+    font-family: 'Inter', sans-serif;
+    display: flex; /* Flex container for layout */
+    justify-content: space-between; /* Space between left and right content */
+    align-items: center; /* Center vertically */
+    
+}
+
+.buy-me-a-coffee {
+    margin-left: 10rem;
+    margin-top: 2vw;
+    max-width: 15vw;
+    align-items: center;
+}
+
+.buy-me-a-coffee a { 
+    margin-right: 2vw;
+    ;
+}
+
+.buy-me-a-coffee a:hover {
+    background-color: #d2b37c; /* Lighter accent color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+
+.footer-content {
+    display: flex; /* Flex container for the middle section */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center the contact section */
+    margin-top: 1rem; /* Space above footer content */
+}
+
+.footer-content p {
+    font-size: rem; /* Consistent font size */
+    margin: 0; /* Remove default margin */
+}
+
+.footer-contacts {
+    display: flex; /* Flex container for horizontal links */
+    flex-direction: column; /* Arrange links vertically */
+    align-items: center; /* Center align the contact links */
+    margin-top: 0.5rem; /* Space above contact links */
+}
+
+.footer-contacts a {
+    color: #fafafa; /* Make links the same color as text */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.2rem; /* Consistent font size */
+    font-weight: 400; /* Normal weight for links */
+    margin: 0.5rem 0; /* Space between links */
+}
+
+.footer-contacts a:hover {
+    color: #b08145; /* Accent color on hover */
+}
+
+/* Copyright styling */
+.footer-copyright {
+    margin-right: 2rem; /* Add some space on the right */
+    font-size: 1rem; /* Consistent font size */
+    font-weight: 400; /* Normal weight for copyright */
+}
+
+/* Media queries for better responsiveness */
+@media (max-width: 600px) {
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+    .footer-contacts a {
+        font-size: 1rem;
+    }
+}
