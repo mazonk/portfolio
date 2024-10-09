@@ -1,10 +1,6 @@
 .projects {
     padding: 4rem 0;
     background-color: #B08145; /* Fallback background color */
-    background-image: 
-      linear-gradient(45deg, #eee4dd80 9px, transparent 9px),
-      linear-gradient(45deg, rgba(24, 105, 151, 0.5) 135px, transparent 135px),
-      linear-gradient(45deg, rgba(225, 244, 253, 0.5) 45px, transparent 45px);
     background-position: 
       149px 0, /* Adjust for the first stripe */
       95px 0, /* Adjust for the second stripe */
@@ -26,7 +22,7 @@
     font-size: 2.5rem;
     margin-bottom: 2rem;
     font-weight: bold;
-    color: #192233; /* Text color */
+    color: #D2B37C; /* Text color */
 }
 
 .projects-grid {
@@ -41,20 +37,21 @@
 .project-card {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 1rem;
+    box-shadow: 0 1vw 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-10px); /* Lift on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    box-shadow: 0 1.5vw 1rem rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
 }
 
 .project-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire card */
+    object-fit: cover;
+    
 }
 
 .project-info {

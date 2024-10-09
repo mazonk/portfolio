@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
+import ScrollTrigger from 'gsap/ScrollTrigger';
 import basePath from './imageRoute';
 
 const AboutMe: React.FC = () => {

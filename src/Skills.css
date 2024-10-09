@@ -3,13 +3,13 @@
     flex-direction: column;
     align-items: center;
     padding: 4rem 0;
-    background-color: #123A6B; /* Optional background */
+    background-color: #20548E; /* Optional background */
   }
   
   .skills-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #B08145; /* Customize text color */
+    color: #123A6B; /* Customize text color */
     font-weight: bold;
   }
   
@@ -25,10 +25,9 @@
     width: 10vw;
     height: 7vw;
     object-fit: contain; /* Ensure logos fit within the boxes */
-    transition: transform 0.3s ease-in-out;
   }
   
   .logo:hover {
-    transform: scale(1.2); /* Slight zoom on hover */
+    transform: scale(1.4); /* Slight zoom on hover */
   }
   
