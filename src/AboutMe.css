@@ -43,4 +43,10 @@
     margin-top: 5vw;
     text-align: center;
   }
-  
+
+  @media (max-width: 768px) {
+    .profile-image {
+        width: 100%; /* Adjust for mobile */
+        height: auto;
+    }
+}

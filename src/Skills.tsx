@@ -16,20 +16,20 @@ const Skills: React.FC = () => {
     const logos = logosRef.current?.querySelectorAll('.logo');
 
     if (logos && logos.length > 0) {
-      // Use GSAP's modifiers plugin to create a wrapping effect
+      // Create a timeline for the floating effect
       const tl = gsap.timeline({
         repeat: -1, // Infinite repeat
-        defaults: { duration: 10, ease: 'linear' },
+        defaults: { duration: 2, ease: 'power1.inOut' },
       });
 
-      tl.to(logos, {
-        x: '-=200%', // Move logos to the left
-        modifiers: {
-          x: gsap.utils.wrap(-200, 200), // Wrap the logos once they reach the end
-        },
-        stagger: {
-          each: 1, // Stagger each logo
-        },
+      // Loop through each logo and apply the floating effect
+      logos.forEach((logo, index) => {
+        tl.to(logo, {
+          y: -10, // Move the logo up
+          scale: 1.1, // Scale up slightly
+          yoyo: true, // Go back to the original position
+          repeat: 1, // Repeat once for each logo
+        }, index * 0.3); // Stagger the animation start time for each logo
       });
     }
   }, []);
@@ -39,10 +39,11 @@ const Skills: React.FC = () => {
       <h1 className="skills-title">My Skills</h1>
       <div className="logos-container" ref={logosRef}>
         <img src={`..${basePath}/assets/html.png`} alt="HTML" className="logo" />
-        <img src={`..${basePath}/assets/css.png`} alt="CSS" className="logo" />
-        <img src={`..${basePath}/assets/javascript.png`} alt="JavaScript" className="logo" />
-        <img src={`..${basePath}/assets/csharp.png`} alt="C#" className="logo" />
+        <img src={`..${basePath}/assets/figma.png`} alt="Figma" className="logo" />
         <img src={`..${basePath}/assets/ts.png`} alt="TypeScript" className="logo" />
+        <img src={`..${basePath}/assets/java.webp`} alt="java" className="logo" />
+        <img src={`..${basePath}/assets/csharp.png`} alt="C#" className="logo" />
+        <img src={`..${basePath}/assets/kafka.png`} alt="Kafka" className="logo" />
         <img src={`..${basePath}/assets/node.webp`} alt="Node.js" className="logo" />
         <img src={`..${basePath}/assets/tailwind.png`} alt="Tailwind" className="logo" />
         <img src={`..${basePath}/assets/ps.jpg`} alt="Adobe PS" className="logo" />

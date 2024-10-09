@@ -7,14 +7,14 @@ const projects = [
     id: 1,
     title: 'Project 1',
     description: 'A cool web development project.',
-    imageUrl: `..${basePath}/assets/sky.jpg`, // Replace with your actual image path
+    imageUrl: `..${basePath}/assets/cinema.jpg`, // Replace with your actual image path
     link: 'https://spicypisces.eu/pages', // Link to the project or demo
   },
   {
     id: 2,
     title: 'Deck 1',
     description: 'A dispatch app for helicopters. ',
-    imageUrl: `..${basePath}/assets/dispatch.png`,
+    imageUrl: `..${basePath}/assets/dispatch.jpg`,
     link: 'https://github.com/DECK1xUCN/DispatchApp',
   },
   {

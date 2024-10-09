@@ -4,14 +4,14 @@
     align-items: center;
     margin-top: 50px;
     position: relative;
-    background-color: #00081d;
+    background-color: #d2b37c;
     margin-top: 2vw;
   }
   
   .timeline-title-text {
     font-size: 3rem;
     font-weight: bold;
-    color: #f8f8f8;
+    color: #b08145;
     margin-bottom: 2rem;
     margin-top: 2vw
   }
@@ -86,5 +86,14 @@
   .timeline-item:nth-child(5) {
     top: 500px;
     left: 90%;
+}
+
+  .timeline-item {
+    cursor: grab; /* Change cursor to grab when hovering over timeline items */
+    position: absolute; /* Make sure the items are positioned absolutely for dragging */
   }
+  
+  .timeline-item:active {
+    cursor: grabbing; /* Change cursor to grabbing while dragging */
+  }  
   
