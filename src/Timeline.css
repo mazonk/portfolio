@@ -86,7 +86,7 @@
   .timeline-item:nth-child(5) {
     top: 500px;
     left: 90%;
-  }
+}
 
   .timeline-item {
     cursor: grab; /* Change cursor to grab when hovering over timeline items */

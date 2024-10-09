@@ -26,7 +26,6 @@ const Navbar: React.FC = () => {
         <a onClick={() => scrollToSection('projects')}>Projects</a>
         <a onClick={() => scrollToSection('skills')}>Skills</a>
         <a onClick={() => scrollToSection('footer')}>Get in touch!</a>
-
       </div>
     </nav>
   );
