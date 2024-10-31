@@ -8,7 +8,8 @@ const projects = [
     title: 'Project 1',
     description: 'A cool web development project.',
     imageUrl: `..${basePath}/assets/cinema.jpg`, // Replace with your actual image path
-    link: 'https://spicypisces.eu/pages', // Link to the project or demo
+
+    link: 'https://spicypisces.eu', // Link to the project or demo
   },
   {
     id: 2,

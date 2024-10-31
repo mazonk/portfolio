@@ -1,99 +1,91 @@
 .timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    position: relative;
-    background-color: #d2b37c;
-    margin-top: 2vw;
-  }
-  
-  .timeline-title-text {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #b08145;
-    margin-bottom: 2rem;
-    margin-top: 2vw
-  }
-  
-  .timeline-container {
-    position: relative;
-    width: 80%;
-    height: 100vh;
-    margin-top: 20px;
-  }
-  
-  .curve-path {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  .curve-path svg {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    z-index: 1;
-  }
-  
-  .timeline-item {
-    position: absolute;
-    display: block;
-    opacity: 1;
-    justify-content: center;
-    align-items: center;
-    background-color: #20548E;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    text-align: center;
-    z-index: 10;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .timeline-checkpoint h3 {
-    margin: 0;
-    font-size: 1.5rem;
-  }
-  
-  .timeline-checkpoint p {
-    margin: 0;
-    font-size: 1.2rem;
-  }
-  
-  .timeline-item:nth-child(1) {
-    top: 100px;
-    left: 10%;
-  }
-  
-  .timeline-item:nth-child(2) {
-    top: 200px;
-    left: 30%;
-  }
-  
-  .timeline-item:nth-child(3) {
-    top: 300px;
-    left: 50%;
-  }
-  
-  .timeline-item:nth-child(4) {
-    top: 400px;
-    left: 70%;
-  }
-  
-  .timeline-item:nth-child(5) {
-    top: 500px;
-    left: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  margin-top: 2vw;
 }
 
-  .timeline-item {
-    cursor: grab; /* Change cursor to grab when hovering over timeline items */
-    position: absolute; /* Make sure the items are positioned absolutely for dragging */
-  }
-  
-  .timeline-item:active {
-    cursor: grabbing; /* Change cursor to grabbing while dragging */
-  }  
-  
+.timeline-title-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #b08145;
+  margin-bottom: 2rem;
+  margin-top: 2vw;
+}
+
+.timeline-container {
+  position: relative;
+  width: 80%;
+  height: 100vh;
+  margin-top: 20px;
+}
+
+/* Vertical line */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Line thickness */
+  background-color: black; /* Line color */
+  transform: translateX(-50%); /* Center the line */
+}
+
+.timeline-item {
+  position: absolute;
+  display: block;
+  opacity: 0; /* Start invisible for animation */
+  justify-content: center;
+  align-items: center;
+  background-color: #20548E;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease; /* Smooth opacity transition */
+}
+
+/* Position each timeline item */
+.timeline-item:nth-child(1) {
+  top: 100px; /* Initial position */
+  left: 50%; /* Align to the vertical line */
+  transform: translateX(-50%); /* Center the item */
+}
+
+.timeline-item:nth-child(2) {
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(3) {
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(4) {
+  top: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 2vw;
+}
+
+.timeline-item:nth-child(5) {
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  cursor: grab; /* Change cursor to grab when hovering over timeline items */
+}
+
+.timeline-item:active {
+  cursor: grabbing; /* Change cursor to grabbing while dragging */
+}
