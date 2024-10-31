@@ -4,7 +4,7 @@
     padding: 2rem; /* Add some padding around the section */
     background-size: cover; 
     background-position: center;
-    background-color: #000000;
+    /* background-color: #000000; */
   }
   
   .content {
@@ -26,8 +26,8 @@
   
   .text-container {
     flex: 2; /* Allow the text container to take more space */
-    color: #B08145; /* Optional: change text color */
-    
+    margin-top: 2vw;
+    color: #ffffff; /* Optional: change text color */
   }
   
  /* h1 {

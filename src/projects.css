@@ -1,6 +1,6 @@
 .projects {
     padding: 4rem 0;
-    background-color: #B08145; /* Fallback background color */
+   /* background-color: #B08145;  */
     background-position: 
       149px 0, /* Adjust for the first stripe */
       95px 0, /* Adjust for the second stripe */
@@ -22,7 +22,7 @@
     font-size: 2.5rem;
     margin-bottom: 2rem;
     font-weight: bold;
-    color: #D2B37C; /* Text color */
+    color: #ffffff; /* Text color */
 }
 
 .projects-grid {

@@ -2,15 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center ;
-    background-color: #D2B37C;
-    color: #B08145;
+    background-color: #20548e;
+    color: #000000;
     padding: 0.5rem;    
 }
   .footer-content {
     margin-bottom: 0.5rem;
     font-size: 2rem;
     margin-right: 11rem;
-    padding-top: 1rem;
   }
   
   .footer-copyright {
@@ -30,13 +29,14 @@
     align-items: center;
     transition: background-color 0.3s, transform 0.3s;
     padding-bottom: 1vw; 
+    margin-top: 1vw;
 }
   
   .icon {
     width: 2.5vw;
     height: auto;
     transition: transform 0.3s ease-in-out;
-    margin-top: 1vw;
+  
 
   }
   
@@ -46,7 +46,7 @@
     
   .coffee-icon {
     width: 9vw;
-    height: auto;
+    height: 3vw;
     transition: transform 0.3s ease-in-out;
     margin-right: 10rem;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */

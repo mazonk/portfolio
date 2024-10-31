@@ -53,6 +53,7 @@ const App: React.FC = () => {
 
     return (
       <div>
+        <div className="gradient-background"></div>
         <Navbar />
         <section id="introduction">
           <Introduction />
@@ -73,6 +74,7 @@ const App: React.FC = () => {
           <Footer />
         </section>
       </div>
+      
     );
   };
 
