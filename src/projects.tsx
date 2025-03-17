@@ -15,7 +15,7 @@ const projects = [
     id: 2,
     title: 'Deck 1',
     description: 'A dispatch app for helicopters. ',
-    imageUrl: `..${basePath}/assets/dispatch.jpg`,
+    imageUrl: `..${basePath}/assets/dispatch.png`,
     link: 'https://github.com/DECK1xUCN/DispatchApp',
   },
   {
